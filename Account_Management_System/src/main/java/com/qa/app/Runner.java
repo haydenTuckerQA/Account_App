@@ -22,6 +22,9 @@ public class Runner
         System.out.println(JSONConverter.convertToJSON(service.getAccounts()));
     
         AccountFinder accountFinder = new AccountFinder();
-        accountFinder.findAmountByFirstNameIterator("Hayden", service.getAccounts());
+        String firstName = "Hayden";
+        int count = accountFinder.findAmountByFirstNameIterator("Hayden", service.getAccounts());
+        
+        System.out.println("There are " + count + " accounts with the first name " + firstName + ".");
     }
 }

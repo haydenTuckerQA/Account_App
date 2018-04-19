@@ -1,6 +1,7 @@
 package com.qa.app;
 
 import com.qa.Account_Management_System.Account;
+import com.qa.Account_Management_System.AccountFinder;
 import com.qa.Account_Management_System.JSONConverter;
 import com.qa.Account_Management_System.Service;
 
@@ -19,5 +20,8 @@ public class Runner
         service.addAccount(hugh);
         
         System.out.println(JSONConverter.convertToJSON(service.getAccounts()));
+    
+        AccountFinder accountFinder = new AccountFinder();
+        accountFinder.findAmountByFirstNameIterator("Hayden", service.getAccounts());
     }
 }

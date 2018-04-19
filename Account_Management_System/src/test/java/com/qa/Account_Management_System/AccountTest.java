@@ -6,9 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class AccountTest {
-	Account hayden;
-	Account ryan;
-	Account hugh;
+	private Account hayden;
+	private Account ryan;
+	private Account hugh;
 	
 	@Before
 	public void initialize() {

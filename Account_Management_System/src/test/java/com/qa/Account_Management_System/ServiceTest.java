@@ -6,8 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ServiceTest {
-	Service service;
-	Account testAccount;
+	private Service service;
+	private Account testAccount;
 	
 	@Before
 	public void initialise () {

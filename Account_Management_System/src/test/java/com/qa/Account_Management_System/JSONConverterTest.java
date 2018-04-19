@@ -6,8 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class JSONConverterTest {
-	Account testAccount;
-	Service service;
+	private Account testAccount;
+	private Service service;
 	
 	@Before
 	public void initialise () {

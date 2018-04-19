@@ -23,7 +23,7 @@ public class Runner
     
         AccountFinder accountFinder = new AccountFinder();
         String firstName = "Hayden";
-        int count = accountFinder.findAmountByFirstNameIterator("Hayden", service.getAccounts());
+        int count = accountFinder.findFirstNameCount("Hayden", service.getAccounts());
         
         System.out.println("There are " + count + " accounts with the first name " + firstName + ".");
     }

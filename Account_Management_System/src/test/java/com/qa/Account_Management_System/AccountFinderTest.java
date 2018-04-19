@@ -26,11 +26,11 @@ public class AccountFinderTest {
 	@Test
 	public void testFindAmountByFirstNameIterator() {
 		int expectedValue = 0;
-		int actualValue = accountFinder.findAmountByFirstNameIterator("does-not-exist", service.getAccounts());
+		int actualValue = accountFinder.findFirstNameCount("does-not-exist", service.getAccounts());
 		Assert.assertEquals(expectedValue, actualValue);
 		
 		expectedValue = 2;
-		actualValue = accountFinder.findAmountByFirstNameIterator("Hayden", service.getAccounts());
+		actualValue = accountFinder.findFirstNameCount("Hayden", service.getAccounts());
 		Assert.assertEquals(expectedValue, actualValue);
 	}
 

@@ -20,7 +20,7 @@ public class JSONConverterTest {
 	public void testConvertMapToJSON() {
 		String expected = "{\"" + testAccount.getAccountNumber() + 
 				"\":{\"firstName\":\"Test\",\"lastName\":\"Account\",\"accountNumber\":" + testAccount.getAccountNumber() + "}}";
-        String result = JSONConverter.convertMapToJSON(service.getAccounts());
+        String result = JSONConverter.convertToJSON(service.getAccounts());
         
         assertEquals(expected, result);
 	}
